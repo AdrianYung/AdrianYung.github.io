@@ -1,0 +1,53 @@
+
+header {
+  background-color: #0dc8e9; /* Color de fondo del encabezado */
+  color: #e00a0a; /* Color del texto en el encabezado */
+  text-align: center;
+  padding: 20px 0;
+}
+
+header h1 {
+  font-size: 2rem;
+  color: #e20b0b; /* Color del título */
+}
+
+/* Estilos para el cuerpo de la página */
+main {
+  background-color: #8b8b8b; /* Color de fondo del cuerpo de la página */
+  color: #333; /* Color del texto en el cuerpo de la página */
+  padding: 20px; /* Espacio alrededor del contenido principal */
+}
+
+/* Estilos para las secciones de productos */
+.product {
+  margin-bottom: 20px; /* Espaciado entre secciones de productos */
+}
+
+/* Estilos para los títulos de las secciones */
+.product h2 {
+  font-size: 1.5rem;
+  color: #007acc; /* Color del título de la sección */
+}
+
+/* Estilos para los párrafos en las secciones */
+.product p {
+  font-size: 1rem;
+}
+
+
+
+
+a.buy-button {
+  background-color: #0ef72d; 
+  color: #0c0808; /* Color del texto blanco */
+  padding: 10px 20px; /* Espaciado interno para el botón */
+  text-decoration: none; /* Elimina la decoración de subrayado del enlace */
+  font-weight: bold; /* Texto en negrita */
+  border-radius: 5px; /* Bordes redondeados */
+  transition: background-color 0.3s ease-in-out; /* Transición de color de fondo al hacer hover */
+}
+
+
+a.buy-button:hover {
+  background-color: #c70e99; /* Cambia el color de fondo al hacer hover */
+}
