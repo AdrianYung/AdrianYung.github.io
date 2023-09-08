@@ -2,7 +2,7 @@ header {
   background-color: #0d0d0e; /* Color de fondo del encabezado */
   color: #000000; /* Color del texto en el encabezado */
   text-align: center;
-  padding: 20px 0;
+  padding: 100px 0;
 }
 
 header h1 {
@@ -14,7 +14,7 @@ header h1 {
 main {
   background-color: #3c4729; /* Color de fondo del cuerpo de la página */
   color: #131212; /* Color del texto en el cuerpo de la página */
-  padding: 20px; /* Espacio alrededor del contenido principal */
+  padding: 100px; /* Espacio alrededor del contenido principal */
 }
 
 /* Estilos para las secciones de productos */
