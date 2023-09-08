@@ -1,72 +1,153 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
 header {
-  background-color: #0d0d0e; /* Color de fondo del encabezado */
-  color: #000000; /* Color del texto en el encabezado */
+  background-color: rgb(19, 16, 17);
+  padding: 5px;
   text-align: center;
-  padding: 100px 0;
 }
 
-header h1 {
-  font-size: 2rem;
-  color: #f5f5f5; /* Color del título */
+h1 {
+  color: #0de74f;
 }
 
-/* Estilos para el cuerpo de la página */
 main {
-  background-color: #3c4729; /* Color de fondo del cuerpo de la página */
-  color: #131212; /* Color del texto en el cuerpo de la página */
-  padding: 100px; /* Espacio alrededor del contenido principal */
+  padding: 100px;
 }
 
-/* Estilos para las secciones de productos */
+footer {
+  background-color: #dd158a;
+  color: #cbaacb;
+  padding: 20px;
+  text-align: center;
+}
 .product {
-  margin-bottom: 20px; /* Espaciado entre secciones de productos */
+  margin-bottom: 20px;
+  text-align: center;
 }
 
-/* Estilos para los títulos de las secciones */
-.product h2 {
-  font-size: 1.5rem;
-  color: #007acc; /* Color del título de la sección */
+.product img {
+  width: 150px;
 }
 
-/* Estilos para los párrafos en las secciones */
+.product h3 {
+  color: #55cbcd;
+}
+
 .product p {
-  font-size: 1rem;
+  color: #f31050;
 }
 
-
-
-
-a.buy-button {
-  background-color: #0ef72d; 
-  color: #0c0808; /* Color del texto blanco */
-  padding: 10px 20px; /* Espaciado interno para el botón */
-  text-decoration: none; /* Elimina la decoración de subrayado del enlace */
-  font-weight: bold; /* Texto en negrita */
-  border-radius: 5px; /* Bordes redondeados */
-  transition: background-color 0.3s ease-in-out; /* Transición de color de fondo al hacer hover */
+.product button {
+  background-color: #dfdfda;
+  color: #e61fe6;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+h1
+{
+  
+  column-gap: 10px;
+  color: #d5ffff
 }
 
-
-a.buy-button:hover {
-  background-color: #c70e99; 
+.animado {
+  animation: fade 1s ease-in-out infinite alternate;
 }
 
-
-
-
-@keyframes blink {
+@keyframes fade {
   0% {
       opacity: 1;
   }
-  50% {
+  100% {
       opacity: 0;
   }
-  100% {
-      opacity: 1;
-  }
+}
+.animacion-derecha {
+  animation-name: mover-derecha;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
 
+@keyframes mover-derecha {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100px); 
+  }
+}
+ul {
+  background-color: #55cbcd;
+}
 
-header img {
-  animation: blink 2s infinite; 
+ul li a {
+  color: white;
+}
+
+footer {
+  background-color: #ffffb5;
+}
+.menu {
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.menu li {
+  display: inline;
+  margin-right: 10px;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #ffffb5;
+  font-weight: bold;
+}
+
+.menu li a:hover {
+  color: #07f326;
+}
+.menu a {
+  position: relative;
+  transition: top 0.3s ease;
+}
+
+.menu a:hover {
+  top: -10px; 
+}
+
+.animado:hover {
+  animation: parpadeo 1s infinite;
+}
+
+header h1:hover {
+  animation: moveText 1s ease-in-out infinite alternate;
+}
+
+@keyframes moveText {
+  0% {
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateX(30px);
+  }
+}
+/* Definir la animación cuando se pasa el mouse sobre la imagen */
+.imagen-destacada {
+  transition: transform 0.3s ease; /* Agrega una transición suave de 0.3 segundos para la propiedad "transform" */
+}
+
+/* Define la transformación cuando el mouse está sobre la imagen */
+.imagen-destacada:hover {
+  transform: scale(1.1); /* Aplica un efecto de zoom al 110% del tamaño original */
 }
